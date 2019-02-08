@@ -2,9 +2,10 @@
 //canvas
 var c = document.getElementById('game');
 var ctx = c.getContext("2d");
-// ctx.moveTo(0, 0);
+// ctx.moveTo(128, 64);
 
 var img = new Image();
+
 img.src = 'img/dungeon_1_alpha.png';
 
 //get sprites
@@ -96,11 +97,8 @@ function getTile(tileName) {
 };
 
 function drawMap() {
-    console.log(img);
-    ctx.drawImage(img, 1935, 512, 128, 64, 0, 0, 128, 64);
     for (i = 0; i < this.map.length; i++) {
         for (j = 0; j < this.map[i].length; j++) {
-            console.log('1');
             ctx.drawImage(
                 this.img,
                 this.tiles[this.map[i][j]].x,
@@ -112,10 +110,20 @@ function drawMap() {
                 this.tiles[this.map[i][j]].width,
                 this.tiles[this.map[i][j]].height
             );
+            ctx.drawImage(
+                this.img,
+                this.tiles[this.map[i][j]].x,
+                this.tiles[this.map[i][j]].y,
+                this.tiles[this.map[i][j]].width,
+                this.tiles[this.map[i][j]].height,
+                i * this.tiles[this.map[i][j]].width - (0.5 * this.tiles[this.map[i][j]].width),
+                j * this.tiles[this.map[i][j]].height - (0.5 * this.tiles[this.map[i][j]].height),
+                this.tiles[this.map[i][j]].width,
+                this.tiles[this.map[i][j]].height
+            );
         }
     }
-
-
+    window.requestAnimationFrame(drawMap);
 }
 
-drawMap();
+img.onload = function () { drawMap(); };
