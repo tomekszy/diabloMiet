@@ -16,73 +16,73 @@ var tiles = {
         width: 128,
         height: 64
     },
-    "floorTileCircle1": {
+    "fc1": {
         x: 516,
         y: 511,
         width: 128,
         height: 64
     },
-    "floorTileCircle2": {
+    "fc2": {
         x: 645,
         y: 512,
         width: 128,
         height: 64
     },
-    "floorTileCircle3": {
+    "fc3": {
         x: 774,
         y: 512,
         width: 128,
         height: 64
     },
-    "floorTileCircle4": {
+    "fc4": {
         x: 903,
         y: 512,
         width: 128,
         height: 64
     },
-    "floorTileCircle5": {
+    "fc5": {
         x: 1032,
         y: 512,
         width: 128,
         height: 64
     },
-    "floorTileCircle6": {
+    "fc6": {
         x: 1161,
         y: 512,
         width: 128,
         height: 64
     },
-    "floorTileCircle7": {
+    "fc7": {
         x: 1290,
         y: 512,
         width: 128,
         height: 64
     },
-    "floorTileCircle8": {
+    "fc8": {
         x: 1419,
         y: 512,
         width: 128,
         height: 64
     },
-    "floorTileCircle9": {
+    "fc9": {
         x: 1548,
         y: 512,
         width: 128,
         height: 64
     },
-    "floorTileCircle10": {
+    "fc10": {
         x: 1677,
         y: 512,
         width: 128,
         height: 64
     },
-    "floorTileCircle11": {
+    "fc11": {
         x: 1806,
         y: 512,
         width: 128,
         height: 64
     },
-    "floorTileCircle12": {
+    "fc12": {
         x: 1935,
         y: 512,
         width: 128,
