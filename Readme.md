@@ -1,0 +1,1 @@
+Wygenerowanie mapy

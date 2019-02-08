@@ -1,11 +1,11 @@
-var spritesBitmap = "res/sprites.png";
+
 //canvas
-var c = document.getElementById('canvas');
+var c = document.getElementById('game');
 var ctx = c.getContext("2d");
-ctx.moveTo(0, 0);
+// ctx.moveTo(0, 0);
 
 var img = new Image();
-img.src = 'img/dungeos.png';
+img.src = 'img/dungeon_1_alpha.png';
 
 //get sprites
 var tiles = {
@@ -96,9 +96,12 @@ function getTile(tileName) {
 };
 
 function drawMap() {
-    for (i = 0; i < map.length; i++) {
-        for (j = 0; j < map[i].length; j++) {
-            this.ctx.drawImage(
+    console.log(img);
+    ctx.drawImage(img, 1935, 512, 128, 64, 0, 0, 128, 64);
+    for (i = 0; i < this.map.length; i++) {
+        for (j = 0; j < this.map[i].length; j++) {
+            console.log('1');
+            ctx.drawImage(
                 this.img,
                 this.tiles[this.map[i][j]].x,
                 this.tiles[this.map[i][j]].y,
@@ -112,4 +115,7 @@ function drawMap() {
         }
     }
 
+
 }
+
+drawMap();
